@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Form Title -->
+		<title>Cookson Form</title>
+		<link rel="shortcut icon" type="image/png" href="assets/img/faviconcookie.png" />
+
+		<!-- Bootstrap stylesheet -->
+		<link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" />
+		<!--  Farki's personal customizations stylesheet -->
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+		<!-- jQuery minified and compressed  -->
+		<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+
+	</head>
+
+	<body>
+		
+	    <div class="container">
+	    	<div class="row text-center">
+				<div id="title-image"></div>
+				<h2 class="text-center main-title"><span id="ide-tedd"></span><span></span>Sign up to meet Cookson</h2>
+			</div>
+	    	<div class="row">
+		        <div class="col-md-6 col-md-offset-3">
+			            <form action="process-form-data.php" method="post" class="form" role="form">
+			            	<div class=" well well-sm row">
+				                <div class="col-xs-6 col-md-6">
+				                	<label>First Name</label>
+				                    <input type="text" class="form-control" id="ezkell" name="firstname" maxlength="10" placeholder="Maximum 10 Characters" required autofocus />
+				                </div>
+				                <div class="col-xs-6 col-md-6">
+				                	<label>Last Name</label>
+				                    <input type="text" class="form-control" id="ezkell" name="lastname" maxlength="10" placeholder="Maximum 10 Characters" required />
+				                </div>
+				                <div class="col-xs-12 col-md-12">
+				                	<label>Company</label>
+				                    <input type="text" class="form-control" name="company" placeholder="Company" required />
+				                </div>
+				                <div class="col-xs-6 col-md-6">
+				                	<label>Region/County</label>
+				                    <select type="selectable" class="form-control" id="region-control" name="region" title="Region/County" required />
+				                    	<option>Region / County </option>
+				                    	<option>Africa</option>
+				                    	<option>Australia</option>
+				                    	<option>Asia</option>
+				                    	<option>Central Asia</option>
+				                    	<option>Europe</option>
+				                    	<option>Middle East</option>
+				                    	<option>Middle America</option>
+				                    	<option>North America</option>
+				                    	<option>Oceania</option>
+				                    	<option>South America</option>
+				                    </select>
+				                </div>
+				                <div class="col-xs-6 col-md-6">
+				                	<label>Zip Code</label>
+				                    <input type="number" class="form-control" name="zip" min="1" max="999999" placeholder="Zip Code" required />
+				                </div>
+				                <div class="col-xs-12 col-md-12">
+				                	<label>Country</label>
+				                    <input type="text" class="form-control" name="country" placeholder="Country" required />
+				                </div>
+				                <div class="col-xs-12 col-md-12">
+				                    <label type="label" name="adress" placeholder="Adress" required />Address</label>
+				                </div>
+				                <div class="col-xs-12 col-md-12">
+				                    <input type="text" class="form-control" name="street" placeholder="Street" required />
+				                </div>
+				                <div class="col-xs-12 col-md-6">
+				                	<label>House Number</label>
+				                    <input type="number" class="form-control" id="szamokk" name="house-number" min="1" max="999" placeholder="House Number" required />
+				                    
+				                </div>
+				                <div class="col-xs-12 col-md-6">
+				                	<label>Apartment Number</label>
+				                    <input type="number" class="form-control" id="szamokk" name="flat" min="1" max="999" placeholder="Apartment Number" required />
+				                </div>
+				                <div class="col-xs-12 col-md-12">
+				                	<label>Profession</label>
+				                    <input type="text" class="form-control" name="profession" placeholder="Profession" required />
+				                </div>
+				            	<div class="col-xs-12 col-md-12">
+				            		<label>Email Address</label>
+					            	<input type="email" class="form-control" id="email-placeholder" name="email" placeholder="Someone@example.com" required  />
+					        	</div>
+					        	<div class="col-xs-12 col-md-12">
+					            	<label>Confirm Email Address</label>
+					           		 <input type="email" class="form-control" id="email-placeholder" name="email" placeholder="Someone@example.com" required />
+					           	</div>
+					           	<div class="col-xs-12 col-md-12">
+					            	<label>New Password</label>
+					            	<input type="password" class="form-control" name="password" placeholder="New Password" required />
+					            </div>
+					            <div class="col-xs-12 col-md-12">
+					            	<label>Confirm Password</label>
+					            	<input type="password" class="form-control" name="password" placeholder="Confirm Password" required />
+								</div>
+								<div class="col-xs-12 col-md-12">
+					            	<label>Birth Date</label>
+					            </div>
+				                <div class="col-xs-12 col-md-4">
+				                    <select class="form-control" required>
+				                        <option value="month">Month</option>
+				                        <option>January</option>
+				                        <option>February</option>
+				                        <option>March</option>
+				                        <option>April</option>
+				                        <option>May</option>
+				                        <option>June</option>
+				                        <option>July</option>
+				                        <option>August</option>
+				                        <option>September</option>
+				                        <option>October</option>
+				                        <option>November</option>
+				                        <option>December</option>
+				                    </select>
+				                </div>
+				                <div class="col-xs-12 col-md-4">
+				                    <select class="form-control" id="days-of-the-month" required>
+				                        <option value="">Day</option>
+				                    </select>
+				                </div>
+				                <div class="col-xs-12 col-md-4 tex">
+				                    <select class="form-control" id="selectable-years" required>
+				                        <option value="">Year</option>
+				                    </select>
+				                </div>
+						            <div>
+						            	<label class="col-xs-12 col-md-12 col-md-offset-1" id="gender-label">Gender</label>
+						            	<label class="col-xs-3 col-md-3">
+						                	<input type="radio" name="sex" id="inlineCheckbox1" value="male" required /> Male
+						            	</label>
+						            	<label class="col-xs-3 col-md-4">
+						                	<input type="radio" name="sex" id="inlineCheckbox2" value="female" required /> Female
+						            	</label>
+						            </div>	
+					            <br />
+					            <br />
+					            <label>
+					                <input class="col-md-offset-1 text-center" type="checkbox" name="newsletter" id="inlineCheckbox1" value="newsletter-yes"  /> Sign Up to Newsletter 
+					            </label>
+				            </div> <!-- Well container end -->
+				            <button class="btn btn-lg col-md-offset-10 btn-success" id="button" type="submit">Submit</button>
+			            </form>
+		        	</div>
+		        </div>
+	    	</div><!-- Row End -->
+	    	
+		</div><!-- Container End -->
+
+	    <footer>
+	      <p></p>
+	    </footer><!-- Footer end -->
+
+	    <footer class="footer">
+	      <div class="container">
+	        <p class="text-center">&copy; 2015 Farkas Attila.</p>
+	      </div>
+    	</footer>	
+	    
+	    <!--  Farki's personal scripts -->
+		<script src="assets/js/kukac.js" type="text/javascript"></script>
+	</body>
+</html>
